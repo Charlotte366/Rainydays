@@ -1,7 +1,10 @@
 body {
-    background-color: red;
+    background-color:#BF7E04;
 }
 
 h1 {
     color: blue;
 }
+
+floated {
+    float: right;
