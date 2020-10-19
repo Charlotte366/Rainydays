@@ -9,3 +9,7 @@ h1 {
 nav li {
     display: inline-block;
 }
+
+nav ul {
+    padding: 0px;
+}
