@@ -35,3 +35,9 @@ div class
 .floated {
     float: right;
 }
+
+button {
+    background-color: var(--bright-blue);
+    color: var(--white);
+    padding: var(--horizontal-space);
+  }
