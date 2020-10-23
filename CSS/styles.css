@@ -36,6 +36,13 @@ div class
     float: right;
 }
 
+
+:root {
+    --bright-blue: #2b88ff;
+    --white: #FFF;
+    --horizontal-space: 0px 10px;
+  }
+
 button {
     background-color: var(--bright-blue);
     color: var(--white);
