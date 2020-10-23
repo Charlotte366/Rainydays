@@ -38,13 +38,13 @@ div class
 
 
 :root {
-    --bright-blue: #2b88ff;
+    --dark-blue: #023373;
     --white: #FFF;
     --horizontal-space: 0px 10px;
   }
 
 button {
-    background-color: var(--bright-blue);
+    background-color: var(--dark-blue);
     color: var(--white);
     padding: var(--horizontal-space);
   }
