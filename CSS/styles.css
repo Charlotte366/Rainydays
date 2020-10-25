@@ -62,3 +62,13 @@ button {
     color: var(--white);
     padding: var(--horizontal-space);
 }
+
+container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .container img {
+    width: 100%;
+    height: auto;
+  }
