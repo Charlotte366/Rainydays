@@ -100,7 +100,9 @@ container {
       floated: right;
   }
 
-  
+  i class {
+      floated: right
+  }
   
   
   
