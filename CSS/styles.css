@@ -97,12 +97,15 @@ container {
   }
 
   .form__input {
-      floated: right;
+      float: right;
   }
 
-  i class {
-      floated: right
-  }
+  div i class
+.floated {
+    float: right;
+}
+
+  
   
   
   
