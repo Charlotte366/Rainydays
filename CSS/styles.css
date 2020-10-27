@@ -96,6 +96,10 @@ container {
 
   }
 
+  .form__input {
+      floated: right;
+  }
+
   
   
   
