@@ -95,16 +95,6 @@ container {
       display: block;
   }
 
-  .container {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      grid-template-rows: 1fr auto;
-      grid-gap: 10px;
-      min-height: 400px;
-  }
-
-  .container {
-      background: #f2f0eb;
-  }
+  
   
   
