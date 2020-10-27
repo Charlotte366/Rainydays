@@ -87,5 +87,9 @@ container {
     cursor: pointer;
     border-radius: 5px;
   }
+
+  .form__input{
+      display: block;
+  }
   
   
