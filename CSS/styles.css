@@ -4,6 +4,8 @@ html, body {
     padding: 0;
     display: grid;
     grid-gap: 1em;
+    grid-template-rows: auto auto auto auto 
+
     
 }
 
@@ -11,7 +13,7 @@ header, main, aside, footer {
     background: white;
   }
 
-  
+
 div class {
     width: 100%;
 
