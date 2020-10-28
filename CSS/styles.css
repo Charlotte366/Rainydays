@@ -6,21 +6,20 @@ html, body {
     grid-gap: 1em;
     grid-template-areas:
     'header header'
-    'aside main'
+    'main main'
     'footer footer'
 
     ;
 
 }
 
-header, main, aside, footer {
+header, main, footer {
     background: white;
   }
 
 
 header{grid-area: header;}
 main{grid-area: main;}
-aside{grid-area: aside;}
 footer{grid-area: footer;}
 
 
