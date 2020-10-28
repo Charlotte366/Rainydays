@@ -39,6 +39,11 @@ nav a:hover {
     text-decoration: underline;
 }
 
+nav {
+    margin:0 auto;
+}
+
+
 .floated{
     float: right;
 }
@@ -107,10 +112,7 @@ container {
 }
 
 
-nav {
-    width:750px;
-    margin:0 auto;
-}
+
 
   
   
