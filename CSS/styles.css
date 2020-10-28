@@ -4,14 +4,20 @@ html, body {
     padding: 0;
     display: grid;
     grid-gap: 1em;
-    grid-template-rows: auto 1fr auto  
+    grid-template-areas:
+    'header header'
+    ;
 
-    
 }
 
 header, main, footer {
     background: white;
   }
+
+
+header{grid-area: header;}
+main{grid-area: main;}
+footer{grid-area: footer;}
 
 
 div class {
