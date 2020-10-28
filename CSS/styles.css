@@ -7,19 +7,21 @@ html, body {
     grid-template-areas:
     'header header'
     'main main'
+    'aside aside'
     'footer footer'
     
     ;
 
 }
 
-header, main, footer {
+header, main, aside, footer {
     background: white;
   }
 
 
 header{grid-area: header;}
 main{grid-area: main;}
+aside{grid-area: aside;}
 footer{grid-area: footer;}
 
 
