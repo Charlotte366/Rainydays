@@ -21,6 +21,7 @@ nav li {
 
 nav ul {
     padding: 20px;
+    margin: auto;
 }
 
 nav a { 
@@ -105,10 +106,7 @@ container {
     float: right;
 }
 
-main section
-.floated {
-    float: right;
-}
+
 
 
   
