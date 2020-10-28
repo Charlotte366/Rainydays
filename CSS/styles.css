@@ -4,6 +4,7 @@ html, body {
     padding: 0;
     display: grid;
     grid-gap: 1em;
+    grid-template-rows: auto;
     grid-template-areas:
     'header header'
     'main main'
