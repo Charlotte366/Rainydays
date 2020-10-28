@@ -20,8 +20,8 @@ header, main, aside, footer {
 
 
 header{grid-area: header;}
-main{grid-area: main;}
-aside{grid-area: aside;}
+main{grid-area: aside;}
+aside{grid-area: main;}
 footer{grid-area: footer;}
 
 
