@@ -6,9 +6,9 @@ html, body {
     grid-gap: 1em;
     grid-template-areas:
     'header header'
-    'main aside'
+    'aside main'
     'footer footer'
-    
+
     ;
 
 }
