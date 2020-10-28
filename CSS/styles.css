@@ -16,7 +16,7 @@ h1 {
 
 nav li {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 nav ul {
