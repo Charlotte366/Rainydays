@@ -13,9 +13,12 @@ html, body {
 
 }
 
-header, main, footer {
+header, main {
     background: white;
-   
+  }
+
+  footer {
+      background: grey
   }
 
 
