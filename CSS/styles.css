@@ -13,13 +13,12 @@ html, body {
 
 }
 
-header, main {
+header, main, footer {
     background: white;
   }
 
-  footer {
-      background: grey
-  }
+
+
 
 
 header{grid-area: header;}
