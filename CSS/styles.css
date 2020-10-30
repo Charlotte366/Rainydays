@@ -35,7 +35,7 @@ h1 {
 }
 
 nav li {
-    display: flex;
+    display: inline-block;
     justify-content: space-around;
 }
 
