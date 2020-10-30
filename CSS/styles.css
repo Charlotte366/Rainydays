@@ -144,6 +144,11 @@ container {
     clear: left;
   }
 
+  .img-front img {
+      width: 300px;
+      height: 400px;
+  }
+
   
   
   
