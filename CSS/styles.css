@@ -17,7 +17,9 @@ header, main, footer {
     background: white;
   }
 
-
+img {
+    width: 100%;
+}
 
 
 header{grid-area: header;}
