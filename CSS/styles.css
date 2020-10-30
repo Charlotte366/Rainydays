@@ -149,16 +149,6 @@ container {
       height: 400px;
   }
 
-  .container {
-    display: flex;
-  }
-  
-  .contact {
-    width: 50%;
-    margin: 1rem;
-    padding: 1rem;
-    background-color: white;
-  }
 
   fieldset {
     display: flex;
