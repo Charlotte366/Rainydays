@@ -1,4 +1,5 @@
 html, body {
+    min-width: 300px;
     background-color:#BF7E04;
     margin: 0;
     padding: 0;
