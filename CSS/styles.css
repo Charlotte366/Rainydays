@@ -39,6 +39,9 @@ nav li {
     justify-content: space-around;
 }
 
+nav a {text-align: center; 
+}
+
 nav ul {
     padding: 20px;
     
