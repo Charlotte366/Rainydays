@@ -145,10 +145,6 @@ container {
     clear: left;
   }
 
-  .img-first-front img {
-      width: 100%;
-  }
-
   .img-front img {
       width: 400px;
       height: 400px;
