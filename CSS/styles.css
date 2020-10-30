@@ -145,6 +145,10 @@ container {
     clear: left;
   }
 
+  .logo-top {
+      width: 100%;
+  }
+
   .img-front img {
       width: 400px;
       height: 400px;
