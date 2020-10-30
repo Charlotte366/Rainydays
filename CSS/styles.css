@@ -149,6 +149,11 @@ container {
       height: 400px;
   }
 
+  fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+
 
   
   
