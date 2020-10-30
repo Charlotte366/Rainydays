@@ -13,10 +13,6 @@ html, body {
 
 }
 
-header {
-    background-image: url('header.jpg')
-}
-
 
 header, main, footer {
     background: white;
