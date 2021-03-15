@@ -35,21 +35,34 @@ h1 {
   color: rgb(0, 0, 0);
 }
 
+nav li {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  margin: 0 auto;
+  padding: 20px;
+}
+
 nav a {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: black;
-  font-size: larger;
+  color: #023373;
+  text-decoration: none;
+}
+
+nav a {
+  font-weight: bold;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
+nav {
+  width: 750px;
+  margin: 0 auto;
 }
 
 .floated {
