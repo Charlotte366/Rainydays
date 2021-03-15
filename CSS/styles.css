@@ -1,167 +1,138 @@
-html, body {
-    background-color:#BF7E04;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-gap: 1em;
-    grid-template-areas:
-    'header header'
-    'main main'
-    'footer footer'
-
-    ;
-
+html,
+body {
+  background-color: #bf7e04;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
 }
 
+header,
+main,
+footer {
+  background: white;
+}
 
-header, main, footer {
-    background: white;
-  }
-
-
-
-header{grid-area: header;}
-main{grid-area: main;}
-footer{grid-area: footer;}
-
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
 
 div class {
-    width: 100%;
-
+  width: 100%;
 }
 
 h1 {
-    color: rgb(0, 0, 0);
-}
-
-nav li {
-    display: flex;
-    justify-content: center;
-}
-
-
-nav ul {
-    margin: 0 auto;
-    padding: 20px;
-    
-}
-
-nav a { 
-color: #023373;
-text-decoration: none
+  color: rgb(0, 0, 0);
 }
 
 nav a {
-    font-weight: bold;
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  font-size: larger;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
-nav {
-    width:750px;
-    margin:0 auto;
-}
-
-
-.floated{
-    float: right;
-}
-
-div class
-.floated {
-    float: right;
-}
-
-
-:root {
-    --dark-blue: #023373;
-    --white: #FFF;
-    --horizontal-space: 15px 30px;
-  }
 
 .container {
-    position:relative
-    width 50%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.floated {
+  float: right;
+}
+
+div class .floated {
+  float: right;
+}
+
+:root {
+  --dark-blue: #023373;
+  --white: #fff;
+  --horizontal-space: 15px 30px;
+}
+
+.container {
+  position: relative width 50%;
 }
 
 .container img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 button {
-    background-color: var(--dark-blue);
-    color: var(--white);
-    padding: var(--horizontal-space);
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: var(--horizontal-space);
 }
 
 container {
-    position: relative;
-    width: 50%;
-  }
-  
-
-  .container .btn {
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #023373;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-
-  .form__input {
-      display: block;
-
-  }
-
-  .form__input {
-      float: right;
-  }
-
-  div i class
-.floated {
-    float: right;
+  position: relative;
+  width: 50%;
 }
 
+.container .btn {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #023373;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
-.float{
-    margin: 10px;
-    float: left;
-    width: 300px;
-  }
-  
-  .clear{
-    clear: left;
-  }
+.form__input {
+  display: block;
+}
 
+.form__input {
+  float: right;
+}
 
-  .img-front img {
-      width: 400px;
-      height: 400px;
-  }
+div i class .floated {
+  float: right;
+}
 
+.float {
+  margin: 10px;
+  float: left;
+  width: 300px;
+}
 
-  fieldset {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: 1rem;
-    padding: 1rem;
-    background-color: white;
-  }
+.clear {
+  clear: left;
+}
 
+.img-front img {
+  width: 400px;
+  height: 400px;
+}
 
-
-  
-  
+fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+}
