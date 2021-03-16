@@ -161,6 +161,12 @@ container {
     background-color: white;
   }
 
+  .form-error {
+    display: none;
+    color: red;
+    margin-top: 2px;
+  }
+
 
 
   

@@ -1,10 +1,10 @@
 const form = document.querySelector("#contactForm");
 const name = document.querySelector("#name");
 const nameError = document.querySelector("#nameError");
-const lastName = document.querySelector("#lastName");
-const lastNameError = document.querySelector("lastNameError")
-const subject = document.querySelector("#subject");
-const subjectError = document.querySelector("#subjectError");
+//const lastName = document.querySelector("#lastName");
+//const lastNameError = document.querySelector("lastNameError")
+const city = document.querySelector("#city");
+const cityError = document.querySelector("#cityError");
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 const adress = document.querySelector("#adress");
@@ -18,16 +18,17 @@ function validateForm(){
     } else {
         nameError.style.display ="block";
     }
+
     if (lastName.value.trim().length > 0) {
         lastNameError.style.display = "none";
     } else {
         lastNameError.style.display ="block";
     }
 
-    if (subject.value.trim().length > 9) {
-        subjectError.style.display = "none";
+    if (city.value.trim().length > 9) {
+        cityError.style.display = "none";
     } else {
-        subjectError.style.display ="block";
+        cityError.style.display ="block";
     }
 
     if (validateEmail(email.value) === true) {
@@ -37,10 +38,22 @@ function validateForm(){
     }
     
 
-    if (adress.value.trim().length > 24) {
+    if (adress.value.trim().length > 9) {
         adressError.style.display = "none";
     } else {
         adressError.style.display ="block";
+    }
+
+    if (city.value.trim().length > 0) {
+        cityError.style.display = "none";
+    } else {
+        cityError.style.display ="block";
+    }
+
+    if (country.value.trim().length > 0) {
+        countryError.style.display = "none";
+    } else {
+        countryError.style.display ="block";
     }
 
 

@@ -45,13 +45,66 @@
           <img src="images/Komprimert3125.jpg"  alt="man smilimg" width="200px" height="280px"/>
         </a>
 
-        <form method="get" action="/Checkoutsuccess.html">
+      
+          <main class="containerSuccess">
+            <form id="contactForm">
+              <div>
+                <label>
+                  Name (required)
+                  <input name="name" id="name"/>
+                </label>
+                <div class="form-error" id="nameError">Please enter your name</div>
+              </div>
+    
+              <div>
+                <label>
+                  Last name (required)
+                  <input name="lastName" id="lastName"/>
+                </label>
+                <div class="form-error" id="lastNameError">Please enter you last name</div>
+              </div>
+    
+              <div>
+                <label>
+                  Email
+                  <input name="email" id="email"/>
+                </label>
+                <div class="form-error" id="emailError">Please enter a valid email adress</div>
+              </div>
+    
+              <div>
+                <label>
+                  Adress (minimum 10 characters)
+                  <input name="adress" id="adress"/>
+                </label>
+                <div class="form-error" id="adressError">Your adress must be at least 10 characters</div>
+              </div>
+    
+              <div>
+                <label>
+                  City (required)
+                  <input name="city" id="city"/>
+                </label>
+                <div class="form-error" id="cityError">Please enter your city</div>
+              </div>
+    
+              <div>
+                <label>
+                  Country (required)
+                  <input name="country" id="country"/>
+                </label>
+                <div class="form-error" id="countryError">Please enter your country</div>
+              </div>
+            </form>    
+          </main>
+          
+          <form method="get" action="/Checkoutsuccess.html">
             <button class="btn">Complete order</button>
           </form>
+      
             
             
         </select>
-        <p></p>
       </section>
     </main>
 
