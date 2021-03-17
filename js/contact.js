@@ -68,3 +68,21 @@ function validateEmail(email) {
     const patternMatches = regEx.test(email);
     return patternMatches;
 }
+
+const message = document.querySelector("textarea");
+const characterCount = document.querySelector(".character-count span");
+const submitButton = document.querySelector("button[type='submit']");
+
+message.onkeyup = function () {
+    console.log(event.target.value.length);
+
+    const length = event.target.value.length;
+
+    characterCount.innerHTML = length;
+
+    if (length >= 9) {
+        submitButton.disabled = true;
+    } else {
+        submitButton.disabled = false;
+    }
+};
