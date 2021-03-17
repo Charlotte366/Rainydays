@@ -81,8 +81,8 @@ message.onkeyup = function () {
     characterCount.innerHTML = length;
 
     if (length >= 9) {
-        submitButton.disabled = true;
-    } else {
         submitButton.disabled = false;
+    } else {
+        submitButton.disabled = true;
     }
 };
