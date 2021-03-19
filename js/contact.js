@@ -9,6 +9,10 @@ const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 const adress = document.querySelector("#adress");
 const adressError = document.querySelector("#adressError");
+const cardNumber = document.querySelector("#cardNumber");
+const cardNumberError = document.querySelector("#cardNumberError");
+
+
 
 function validateForm(){
     event.preventDefault();
