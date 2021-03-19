@@ -11,6 +11,10 @@ const adress = document.querySelector("#adress");
 const adressError = document.querySelector("#adressError");
 const cardNumber = document.querySelector("#cardNumber");
 const cardNumberError = document.querySelector("#cardNumberError");
+const cardholderName = document.querySelector("#cardholderName")
+const cardholderNameError = document.querySelector("#cardholderNameError")
+const cvv = document.querySelector("#cvv");
+const cvvError = document.querySelector("cvvError");
 
 
 
@@ -39,6 +43,18 @@ function validateForm(){
         emailError.style.display = "none";
     } else {
         emailError.style.display ="block";
+    }
+
+    if (validateCardNumber(cardNumber.value) === true) {
+        cardNumberError.style.display = "none";
+    } else {
+        cardNumberError.style.display ="block";
+    }
+
+    if (validatecvv(cvv.value) === true) {
+        cvvError.style.display = "none";
+    } else {
+        cvvError.style.display ="block";
     }
     
 
@@ -70,6 +86,18 @@ form.addEventListener("submit", validateForm);
 function validateEmail(email) {
     const regEx = /\S+@\S+\.\S+/;
     const patternMatches = regEx.test(email);
+    return patternMatches;
+}
+
+function validateCardNumber(cardNumber) {
+    const regEx =  /^\d+$/;
+    const patternMatches = regEx.test(cardNumber);
+    return patternMatches;
+}
+
+function validatecvv(cvv) {
+    const regEx =  /^\d+$/;
+    const patternMatches = regEx.test(cvv);
     return patternMatches;
 }
 
