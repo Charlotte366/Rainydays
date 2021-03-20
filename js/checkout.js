@@ -9,9 +9,12 @@ const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 const adress = document.querySelector("#adress");
 const adressError = document.querySelector("#adressError");
-
-
-
+const cardNumber = document.querySelector("#cardNumber");
+const cardNumberError = document.querySelector("#cardNumberError");
+const cardholderName = document.querySelector("#cardholderName")
+const cardholderNameError = document.querySelector("#cardholderNameError")
+const cvv = document.querySelector("#cvv");
+const cvvError = document.querySelector("cvvError");
 
 function validateForm(){
     event.preventDefault();
@@ -40,6 +43,18 @@ function validateForm(){
         emailError.style.display ="block";
     }
 
+    if (validateCardNumber(cardNumber.value) === true) {
+        cardNumberError.style.display = "none";
+    } else {
+        cardNumberError.style.display ="block";
+    }
+
+    if (validateCvv(cvv.value) === true) {
+        cvvError.style.display = "none";
+    } else {
+        cvvError.style.display ="block";
+    }
+    
 
     if (adress.value.trim().length > 9) {
         adressError.style.display = "none";
@@ -72,21 +87,37 @@ function validateEmail(email) {
     return patternMatches;
 }
 
+function validateCardNumber(cardNumber) {
+    const regEx =  /^\d+$/;
+    const patternMatches = regEx.test(cardNumber);
+    return patternMatches;
+}
 
-const message = document.querySelector("textarea");
-const characterCount = document.querySelector(".character-count span");
-const submitButton = document.querySelector("button[type='submit']");
+function validateCvv(cvv) {
+    const regEx =  /^\d+$/;
+    const patternMatches = regEx.test(cvv);
+    return patternMatches;
+}
 
-message.onkeyup = function () {
-    console.log(event.target.value.length);
+form.addEventListener("submit", validateForm);
 
-    const length = event.target.value.length;
+function validateEmail(email) {
+    const regEx = /\S+@\S+\.\S+/;
+    const patternMatches = regEx.test(email);
+    return patternMatches;
+}
 
-    characterCount.innerHTML = length;
+function validateCardNumber(cardNumber) {
+    const regEx =  /^\d+$/;
+    const patternMatches = regEx.test(cardNumber);
+    return patternMatches;
+}
 
-    if (length >= 9) {
-        submitButton.disabled = false;
-    } else {
-        submitButton.disabled = true;
-    }
-};
+function validateCvv(cvv) {
+    const regEx =  /^\d+$/;
+    const patternMatches = regEx.test(cvv);
+    return patternMatches;
+}
+
+
+

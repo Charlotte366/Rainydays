@@ -14,6 +14,8 @@ html, body {
 }
 
 
+
+
 header, main, footer {
     background: white;
   }
@@ -70,11 +72,7 @@ nav {
 .floated{
     float: right;
 }
-
-div class
-.floated {
-    float: right;
-}
+   
 
 
 :root {
@@ -129,10 +127,6 @@ container {
       float: right;
   }
 
-  div i class
-.floated {
-    float: right;
-}
 
 
 .float{
