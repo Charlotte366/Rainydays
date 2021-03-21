@@ -142,6 +142,20 @@ container {
   background-color: white;
 }
 
+.container5 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
 .form-error {
   display: none;
   color: red;
@@ -174,4 +188,26 @@ container {
   width: 50%;
   margin: 1rem;
   padding: 1rem;
+}
+
+.containerSuccess {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+}
+
+@media only screen and (min-with: 600px) {
+}
+
+@media (max-width: 480px) {
+  .p {
+    font-size: 16px;
+  }
 }
