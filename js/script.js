@@ -4,7 +4,7 @@ const proxy = "https://noroffcors.herokuapp.com/";
 
 const corsFix = proxy + url;
 
-const resultsContainer = document.querySelector(".results");
+const newjacketsContainer = document.querySelector(".results");
 
 
 
