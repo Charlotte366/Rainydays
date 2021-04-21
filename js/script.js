@@ -18,7 +18,7 @@ async function fetchProducts() {
 
     const products = results.products;
 
-    resultsContainer.innerHTML = "";
+    newjacketsContainer.innerHTML = "";
 
     console.log(results);
 
