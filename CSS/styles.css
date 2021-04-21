@@ -200,6 +200,24 @@ label {
   background-color: white;
 }
 
+.loader {
+  border: 16px solid lightgrey;
+  border-top: 16px solid blue;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  10% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media (min-width: 600px) and (max-width: 1200px) {
 }
 
