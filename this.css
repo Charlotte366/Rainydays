@@ -1,3 +1,9 @@
+header {
+  background-image: url("images/KomprimertAdobeStock_31146840.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .img-front {
   height: 100px;
   width: auto;
@@ -33,12 +39,4 @@ h1 + p {
 
 h2 + p {
   color: red;
-}
-
-header {
-  background-image: url("/images/header.jpg");
-}
-
-main {
-  background-color: lightpink;
 }
