@@ -2,3 +2,43 @@
   height: 100px;
   width: auto;
 }
+
+nav li {
+  display: inline-block;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:active {
+  background-color: royalblue;
+}
+
+h1 {
+  color: blue;
+}
+h2 {
+  color: red;
+}
+
+h1 + p {
+  color: blue;
+}
+
+h2 + p {
+  color: red;
+}
+
+header {
+  background-image: url("/images/header.jpg");
+}
+
+main {
+  background-color: lightpink;
+}
