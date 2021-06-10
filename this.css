@@ -1,12 +1,17 @@
-header {
-  background-image: url("images/KomprimertAdobeStock_31146840.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+html,
+body {
+  margin: 0px;
+  padding: 0px;
 }
 
-.img-front {
-  height: 100px;
-  width: auto;
+header {
+  background-image: url("/images/diego-ph-PtVN9fACsWU-unsplash.jpg");
+  background-repeat: no-repeat, repeat;
+  background-color: black;
+  background-position: left;
+  background-size: cover;
+  object-fit: cover;
+  font-family: "Abbaya Libre", sans-serif;
 }
 
 nav li {
