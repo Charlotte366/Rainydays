@@ -237,10 +237,14 @@ label {
   }
 }
 
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (max-width: 480) {
+  .welcometop {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-@media (min-with: 600px) {
+@media (min-width: 600px) {
   .p {
     font-size: 16px;
   }
@@ -275,14 +279,5 @@ label {
     font-size: large;
     font-weight: bolder;
     padding-right: 20px;
-  }
-
-  .nav {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .logotop img {
-    width: 100%;
   }
 }
