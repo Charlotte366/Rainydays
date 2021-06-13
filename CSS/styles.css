@@ -242,9 +242,6 @@ label {
     display: flex;
     flex-wrap: wrap;
   }
-  .logotop {
-    width: 100%;
-  }
 }
 
 @media (min-with: 600px) {
