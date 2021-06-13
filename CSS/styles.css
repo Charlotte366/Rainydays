@@ -4,14 +4,79 @@ body {
   padding: 0;
 }
 
-nav {
+.welcometop {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-div class {
+.logotop img {
+  max-width: 200px;
+  height: auto;
+  padding-left: 10px;
+}
+
+.icons {
+  padding-right: 10px;
+}
+
+nav,
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: block;
+}
+
+nav {
+  align-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  color: black;
+}
+
+.square {
+  width: 30px;
+  height: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container img {
   width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.welcome2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imgwelcome img,
+.imgwelcomewider img {
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  object-fit: cover;
 }
 
 p,
@@ -20,36 +85,6 @@ h2,
 h3,
 h4 {
   color: rgb(0, 0, 0);
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-main {
-  background-color: #bf7e04;
-}
-
-nav li {
-  display: flex;
-  justify-content: center;
-}
-
-nav a {
-  color: #023373;
-  text-decoration: none;
-}
-
-nav a {
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: large;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.floated {
-  float: right;
 }
 
 :root {
@@ -60,11 +95,6 @@ nav a:hover {
 
 .container {
   position: relative width 50%;
-}
-
-.container img {
-  width: 100%;
-  height: auto;
 }
 
 button {
@@ -109,17 +139,6 @@ container {
 
 .clear {
   clear: left;
-}
-
-.img-front img {
-  display: inline-block;
-  margin: 55px;
-  margin-bottom: 10px;
-  justify-content: center;
-  max-width: 100%;
-  width: 300px;
-  height: 400px;
-  object-fit: cover;
 }
 
 .differentjackets img {
@@ -221,11 +240,49 @@ label {
 @media (min-width: 600px) and (max-width: 1200px) {
 }
 
-@media only screen and (min-with: 600px) {
-}
-
-@media (max-width: 480px) {
+@media (min-with: 600px) {
   .p {
     font-size: 16px;
+  }
+
+  .welcome2 {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 480px) {
+  nav {
+    display: inline-block;
+  }
+
+  .hamburger-label {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+
+  nav a {
+    font-size: large;
+    font-weight: bolder;
+    padding-right: 20px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logotop img {
+    width: 100%;
   }
 }

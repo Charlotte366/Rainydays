@@ -4,16 +4,6 @@ body {
   padding: 0px;
 }
 
-header {
-  background-image: url("/images/diego-ph-PtVN9fACsWU-unsplash.jpg");
-  background-repeat: no-repeat, repeat;
-  background-color: black;
-  background-position: left;
-  background-size: cover;
-  object-fit: cover;
-  font-family: "Abbaya Libre", sans-serif;
-}
-
 nav li {
   display: inline-block;
 }
@@ -38,10 +28,89 @@ h2 {
   color: red;
 }
 
+h3 {
+  color: green;
+  text-align: center;
+}
+
 h1 + p {
   color: blue;
 }
 
 h2 + p {
   color: red;
+}
+
+h3 + p {
+  color: green;
+  text-align: center;
+}
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+}
+
+.home-section1,
+.home-section5 {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  border: 5px solid black;
+}
+
+.first_wider {
+  flex: 1;
+  padding: 10px;
+}
+
+.second_wider {
+  flex: 1;
+  padding: 10px;
+}
+
+.firstimg {
+  height: auto;
+  max-width: 100%;
+}
+
+.grid-container1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid_item1 {
+  flex: 1;
+  background: lightblue;
+  text-align: center;
+  border: 5px solid black;
+  margin-bottom: 5px;
+}
+
+.lastimg {
+  max-width: 100%;
+  height: 200px;
+}
+
+@media (min-width: 600px) {
+  .home-section,
+  .home-section1,
+  .home-section5 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    grid-gap: 10px;
+    min-height: 400px;
+  }
+
+  .grid_item1 {
+    background: lightblue;
+    text-align: center;
+  }
 }
