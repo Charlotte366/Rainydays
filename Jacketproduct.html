@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script
-      src="https://kit.fontawesome.com/0873c1ceec.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/0873c1ceec.js" crossorigin="anonymous"></script>
     <title>Jacket product</title>
     <meta charset="UTF-8" />
     <meta name="description" content="Buy your jacket" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="CSS/styles.css" />
   </head>
   <body>
@@ -21,15 +17,15 @@
       </div>
 
       <div class="nav">
-        <label class="hamburger-label" for="hamburger-menu"
-          ><img src="images/square.png" alt="hamburger menu" class="square"
-        /></label>
+        <label class="hamburger-label" for="hamburger-menu">
+          <img src="images/square.png" alt="hamburger menu" class="square" />
+        </label>
         <input type="checkbox" id="hamburger-menu" />
         <nav>
           <ul>
-            <li><a href="index.html"> Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="jackets.html">Jackets</a></li>
-            <li><a href="about.html">About </a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
@@ -42,54 +38,41 @@
         <i class="fas fa-shopping-basket"></i>
       </div>
     </section>
-    <header></header>
 
     <main>
-      <div class="allproductpics">
-        <div class="productpics1">
-          <img
-            src="images/Komprimert3125.jpg"
-            alt="man smilimg"
-            width="200px"
-            height="280px"
-          />
-        </div>
-          <img
-            src="images/Komprimert3125.jpg"
-            alt="man smilimg"
-            width="200px"
-            height="280px"
-          />
-          <img
-            src="images/Komprimert3125.jpg"
-            alt="man smilimg"
-            width="200px"
-            height="280px"
-          />
-        </div>
-      </div>
+      <section class="product-section">
+        <div class="product-grid">
+          <div class="product-images">
+            <a href="images/Komprimert3125.jpg" target="_blank" class="main-image">
+              <img src="images/Komprimert3125.jpg" alt="Main jacket view" />
+            </a>
+            <a href="images/Komprimert3125.jpg" target="_blank">
+              <img src="images/Komprimert3125.jpg" alt="Side jacket view" />
+            </a>
+            <a href="images/Komprimert3125.jpg" target="_blank">
+              <img src="images/Komprimert3125.jpg" alt="Back jacket view" />
+            </a>
+          </div>
 
-      <div class="selectyoursize">
-        <div class="product1">
-          <h2>Productinformation</h2>
-          <p>
-            Ludo is a very light 3-layer shell jacket low weight and minimal
-            packing volume. Long ventilation zippers under the sleeves and front
-            pockets that ensure optimal breathability and give you the
-            opportunity to regulate the temperature depending on the activity
-            level. Ludo has a hood that can be rolled up and becomes part of the
-            collar and gives you better protection against rain and wind. The
-            jacket is well suited for an active and versatile outdoor life in
-            rough weather.
-          </p>
-        </div>
+          <div class="product-info">
+            <h2>Product Information</h2>
+            <p>
+              Ludo is a very light 3-layer shell jacket with low weight and minimal packing volume.
+              Long ventilation zippers under the sleeves and front pockets ensure optimal breathability and give you the opportunity to regulate the temperature depending on activity level.
+              The hood can be rolled into the collar and offers protection against rain and wind. Perfect for an active outdoor life in rough weather.
+            </p>
 
-        <form method="get" action="/Checkoutpage.html">
-          <button class="btn">Add to basket</button>
-        </form>
-      </div>
+            <form method="get" action="/Checkoutpage.html">
+              <button class="add-to-basket">Add to basket</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>Copyright &copy;</footer>
+    <footer class="site-footer">
+      <p>© 2025 Rainy Days – Design & Code by Charlotte Soltvedt</p>
+    </footer>
   </body>
 </html>
+

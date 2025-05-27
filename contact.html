@@ -1,137 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="https://kit.fontawesome.com/0873c1ceec.js" crossorigin="anonymous"></script>
-  <title>Contact</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="Contact and give us a message.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" href="CSS/styles.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | RainyDays</title>
+  <link rel="stylesheet" href="CSS/styles.css" />
 </head>
 <body>
-  <header>
+  <header class="welcometop">
+    <div class="logotop">
+      <a href="index.html">
+        <img src="images/RainyDays_Logo.png" alt="RainyDays logo" width="150" />
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="jackets.html">Jackets</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="icons">
+      <i class="fas fa-search"></i>
+      <i class="far fa-user"></i>
+      <i class="far fa-heart"></i>
+      <i class="fas fa-shopping-basket"></i>
+    </div>
+  </header>
 
-    <a href="index.html">
-      <div class="logo-top">
-          <img src="images/RainyDays_Logo.png" alt="logo of Rainydays" width="150px" class="floated">
-        </a>
-        </div>
-    
-
-        
-      <nav>
-        <ul>
-          <section<li><a href="index.html"> Home</a></li>
-          <section<li><a href="jackets.html">Jackets</section> </a></li>
-          <section<li><a href="about.html">About</section> </a></li>
-          <section<li><a href="contact.html">Contact</section> </a></li>
-        </ul>
-      </nav>
-
-      <div class="floated">
-        <i class="fas fa-search"></i>
-        <i class="far fa-user"></i>
-        <i class="far fa-heart"></i>
-        <i class="fas fa-shopping-basket"></i>
+  <main class="contact-section">
+    <h1>Contact</h1>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <p><strong>RainyDays AS</strong></p>
+        <p>Sunnystreet 107<br>N-5020 Bergen</p>
+        <p><strong>Weekdays:</strong> 08:00–16:00<br><strong>Saturday:</strong> 12:00–15:00<br><strong>Sunday:</strong> 15:00–18:00</p>
+        <p><strong>Email:</strong> contact@rainydays.no</p>
       </div>
-</header>
 
+      <form id="contactForm" class="contact-form">
+        <label>
+          First name (required)
+          <input name="firstName" id="firstName" />
+        </label>
 
-    <main>
+        <label>
+          Last name (required)
+          <input name="lastName" id="lastName" />
+        </label>
 
-      <div class="containerorange">
-        <div class="contact1">
-          <h2>Contact</h2>
-          <p>Rainydays AS</p>
-          <p>Sunnystreet 107</p>
-          <p>N-8920 Bergen</p>
-          <p>Weekdays 08-16</p>
-          <p>Saturdays 12-15</p>
-          <p>Sundays 15-18</p>
-        </div>
+        <label>
+          Email
+          <input name="email" id="email" />
+        </label>
 
+        <label>
+          Address (min. 10 characters)
+          <input name="address" id="address" />
+        </label>
 
+        <label>
+          City (required)
+          <input name="city" id="city" />
+        </label>
 
+        <label>
+          Country (required)
+          <input name="country" id="country" />
+        </label>
 
-    <div class="containerForm">
-        <form id="contactForm">
-          <div>
-            <label>
-              Name (required)
-              <input name="name" id="name"/>
-            </label>
-            <div class="form-error" id="nameError">Please enter your name</div>
-          </div>
+        <label>
+          Message
+          <textarea name="message" id="message" rows="4"></textarea>
+        </label>
 
-          <div>
-            <label>
-              Last name (required)
-              <input name="lastName" id="lastName"/>
-            </label>
-            <div class="form-error" id="lastNameError">Please enter you last name</div>
-          </div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </main>
 
-          <div>
-            <label>
-              Email
-              <input name="email" id="email"/>
-            </label>
-            <div class="form-error" id="emailError">Please enter a valid email adress</div>
-          </div>
-
-          <div>
-            <label>
-              Adress (minimum 10 characters)
-              <input name="adress" id="adress"/>
-            </label>
-            <div class="form-error" id="adressError">Your adress must be at least 10 characters</div>
-          </div>
-
-          <div>
-            <label>
-              City (required)
-              <input name="city" id="city"/>
-            </label>
-            <div class="form-error" id="cityError">Please enter your city</div>
-          </div>
-
-          <div>
-            <label>
-              Country (required)
-              <input name="country" id="country"/>
-            </label>
-            <div class="form-error" id="countryError">Please enter your country</div>
-          </div>
-
-        <div class="containerMessage">
-       
-  
-          <legend>*Send us a message, your message must be a minemum of 10 characters</legend>
-          <textarea placeholder="Message"></textarea>
-
-          <div class="character-count">Character count:<span>0</span></div>
-
-          <div>
-            <button type="submit" disabled>Send</button>
-        </div>
-
-        </div>
-          
-        </form> 
-    </div>   
-    </main>
-
-    
-      <p>Contact info about Rainydays
-      </p>
-
-
-
-    <footer>
-      Copyright &copy;
-    </footer> 
-
-  <script src ="js/contact.js"></script>
+  <footer class="site-footer">
+    <p>© 2025 Rainy Days – Design & Code by Charlotte Soltvedt</p>
+  </footer>
 </body>
 </html>
+

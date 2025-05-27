@@ -6,11 +6,11 @@
   <meta charset="UTF-8">
   <meta name="description" content="Advertised items.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <link rel="stylesheet" href="CSS/styles.css"/>
 </head>
 <body>
-  <section class="welcometop">
+  
+  <header class="welcometop">
     <div class="logotop">
       <a href="index.html">
         <img src="images/RainyDays_Logo.png" alt="Rainydays logo" />
@@ -18,15 +18,15 @@
     </div>
 
     <div class="nav">
-      <label class="hamburger-label" for="hamburger-menu"
-        ><img src="images/square.png" alt="hamburger menu" class="square"
-      /></label>
+      <label class="hamburger-label" for="hamburger-menu">
+        <img src="images/square.png" alt="hamburger menu" class="square" />
+      </label>
       <input type="checkbox" id="hamburger-menu" />
       <nav>
         <ul>
-          <li><a href="index.html"> Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="jackets.html">Jackets</a></li>
-          <li><a href="about.html">About </a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -38,68 +38,48 @@
       <i class="far fa-heart"></i>
       <i class="fas fa-shopping-basket"></i>
     </div>
-  </section>
-  <header>
+  </header>
 
-</header>
+  <main>
+    <section class="jackets-section">
+      <h1>Our Rain Jackets</h1>
+      <p>Click on a jacket to get more information. All data is fetched from WordPress as backend.</p>
 
-
-    <main>
-      <section>
-        <h2>Click on the image of the jacket you want more information about</h1>
-      
-        <div class="differentjackets">
-          <a href="Jacketproduct.html">
-            <img src="images/Komprimert3125.jpg"  alt="man smiling"/>
-          </a>
-          <img src="images/Komprimert3125.jpg"/>
-          <img src="images/Komprimert3125.jpg"/> 
-          <img src="images/Komprimert3125.jpg"/>
-          <img src="images/Komprimert3125.jpg"/>
-          <img src="images/Komprimert3125.jpg"/>
-          <img src="images/Komprimert3125.jpg"/>
-          <img src="images/Komprimert3125.jpg"/>
-          <img src="images/Komprimert3125.jpg"/>
-          
-
-        </div>
-
-        <div class="containernewjackets">
-          <h1>New jackets</h1>
-
-          <div class="results">
-              <div class="loader"></div>
-          </div> 
+      <div class="jackets-grid">
+        <a href="Jacketproduct.html"><img src="images/Komprimert3125.jpg" alt="Man smiling in green jacket" /></a>
+        <img src="images/Komprimert3125.jpg" alt="Green jacket" />
+        <img src="images/Komprimert3125.jpg" alt="Green jacket" />
+        <img src="images/Komprimert3125.jpg" alt="Green jacket" />
+        <img src="images/Komprimert3125.jpg" alt="Green jacket" />
+        <img src="images/Komprimert3125.jpg" alt="Green jacket" />
+        <img src="images/Komprimert3125.jpg" alt="Green jacket" />
+        <img src="images/Komprimert3125.jpg" alt="Green jacket" />
+        <img src="images/Komprimert3125.jpg" alt="Green jacket" />
       </div>
 
-       
+      <div class="containernewjackets">
+        <h2>New Jackets</h2>
+        <div class="results">
+          <div class="loader"></div>
+        </div> 
+      </div>
 
-
-     
-
-        <div class=floated>
+      <div class="floated">
         <label for="filter">Sort by:</label>
         <select name="filter" id="filter">
-            <option value="size">Size</option>
-            <option value="price">Low-high</option>
-            <option value="size">High-low</option>
-          </div>
+          <option value="size">Size</option>
+          <option value="price">Low-high</option>
+          <option value="price">High-low</option>
         </select>
+      </div>
+    </section>
+  </main>
 
-        
-      </section>
-    </main>
+  <footer class="site-footer">
+    <p>© 2025 Rainy Days – Design & Code by Charlotte Soltvedt</p>
+  </footer>
 
-    
-    
-    
-    <footer>
-      Copyright &copy;
-    </footer>
-
-  
-  
-  
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
+
